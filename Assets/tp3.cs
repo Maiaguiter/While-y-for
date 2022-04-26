@@ -15,8 +15,25 @@ public class tp3 : MonoBehaviour
     {
         
     }
+
+    public int num1;
+    public int num2;
+
     public void escribirconsola()
     {
-        Debug.Log("Hola Mundo");
+        if (num1 == num2 || num1 < num2)
+        {
+            Debug.Log("Erros, los numeros no pueden ser iguales y el segundo no puede ser menor al primero");
+        }
+        else
+        {
+
+            while (num2 <= num1)
+            {
+                Debug.Log(num1);
+                    num1--;
+            }
+        }
+       
     }
 }
